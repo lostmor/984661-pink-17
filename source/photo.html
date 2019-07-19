@@ -8,7 +8,7 @@
 
 <body>
   <header class="page-header">
-    <a>
+    <a href="index.html">
       <img class="page-header__logo-image" src="index.html" width="75" height="22" alt="Пинк»">
     </a>
     <nav class="main-nav">
@@ -30,8 +30,11 @@
     </nav>
   </header>
   <main class="page-main">
+    <section class="photo">
+      <h1>Фотографии пользователей</h1>
+    </section>
     <section class="users-photo">
-      <h2>Фотографии пользователей</h2>
+      <h2 class="visually-hidden">Фотографии</h2>
       <p class="users-photo__entry-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
         хватает ваших?</p>
       <figure class="users-photo__item photo__item--user-1--panorama">
@@ -44,114 +47,89 @@
           <p class="users-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
             в
             перископе, задавайте свои вопросы!</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">215</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 215</span>
         </figcaption>
       </figure>
 
       <figure class="users-photo__item photo__item--user-2">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Левон</h3>
           <time class="users-photo__time" datetime="2019-07-16">5 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">356</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 356</span>
         </figcaption>
       </figure>
       <figure class="users-photo__item photo__item--user-3">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Антон</h3>
           <time class="users-photo__time" datetime="2019-07-16">12 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Соседи будут рады!</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">666</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 666</span>
         </figcaption>
       </figure>
       <figure class="users-photo__item photo__item--user-4">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Борис</h3>
           <time class="users-photo__time" datetime="2019-07-16">20 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">215</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 215</span>
         </figcaption>
       </figure>
       <figure class="users-photo__item photo__item--user-5">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Сергей</h3>
           <time class="users-photo__time" datetime="2019-07-16">25 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Самая кубанская в мире!</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">4</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 4</span>
         </figcaption>
       </figure>
       <figure class="users-photo__item photo__item--user-6">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Максим</h3>
           <time class="users-photo__time" datetime="2019-07-16">40 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Где снег-то!</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">150</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 150</span>
         </figcaption>
       </figure>
       <figure class="users-photo__item photo__item--user-7">
-        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137"
-          alt="Фото. Панорама дня»">
+        <img class="users-photo__user-image" src="http://placehold.it/320x137" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
           <h3 class="users-photo__user-name">Надежда</h3>
           <time class="users-photo__time" datetime="2019-07-16">45 ЧАСОВ НАЗАД</time>
           <p class="users-photo__text">Всем GM и взаимные лайки!</p>
-          <a class="users-photo__like-button" href="https://echo.htmlacademy.ru">
-            <span class="users-photo__like-button__label">Нравится</span>
-            <div class="users-photo__like-button__count">2560</div>
-          </a>
+          <button class="like"></button>
+          <span>Нравится: 2560</span>
         </figcaption>
       </figure>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="147" height="40"
-        alt="Логотип Пинк»">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <img class="page-footer__logo-image" src="http://placehold.it/150x100" width="147" height="40" alt="Логотип Пинк»">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Twitter</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Youtube</a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <span class="copyright__text">Разработано:</span>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 </body>
