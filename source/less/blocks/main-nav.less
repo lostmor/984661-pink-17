@@ -1,0 +1,32 @@
+.main-nav {
+  .font();
+  font-size: 18px;
+  font-weight: 400;
+
+  &--opened {
+  background-color: @primary-color;
+
+  position: relative;
+
+  width: 320px;
+  min-height: 66px;
+  margin: 0 auto;
+  }
+}
+
+
+
+.site-list {
+  .reset-list();
+}
+
+.site-list__item {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 1px 0 0 @black, inset 0px 1px 0 0 fade(@secondary-color, 15%);
+}
+

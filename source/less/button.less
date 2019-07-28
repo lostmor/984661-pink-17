@@ -1,0 +1,116 @@
+//общие стили
+a {
+  text-decoration: none;
+  font-family: "OpenSans";
+  color: @secondary-color;
+}
+
+button {
+  font-family: "OpenSans";
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+//логотип Пинк в хедере
+.page-header__logo-image {
+  path {
+    fill: @secondary-color;
+  }
+
+  &:hover {
+  path {
+    fill: @pink;
+  }
+}
+
+&:active {
+  path {
+    fill: fade(@secondary-color, 30%);
+  }
+}
+}
+
+//меню навигации
+.site-list__item a:hover {
+ color: @pink;
+}
+
+.site-list__item a:active {
+  color: fade(@secondary-color, 30%);
+ }
+
+
+//"скачать приложение"
+.apps__button {
+  font-size: 18px;
+  font-weight: 700;
+  color: @secondary-color;
+  text-align: center;
+
+  background-color: transparent;
+  border: 3px solid @secondary-color;
+  border-radius: 30px;
+  outline: none;
+
+  padding: 17px 36px 14px 37px;
+
+  margin-top: 25px;
+
+&:hover {
+  color: @pink;
+  background-color: @secondary-color;
+}
+
+&:active {
+  color: fade(@pink, 30%);
+  background-color: @secondary-color;
+}
+}
+
+//логотип Пинк в футере
+.page-footer__logo-image {
+  g path {
+   fill: @primary-color;
+  }
+
+  &:hover {
+  g path {
+   fill: @pink;
+  }
+}
+
+&:active {
+  path {
+   fill: fade(@primary-color, 30%);
+  }
+  g path {
+    fill: fade(@primary-color, 30%);
+   }
+}
+}
+
+//ссылки в футере
+.social__link:hover {
+  border: 3px solid @primary-color;
+}
+
+.social__link:active {
+  border: 3px solid fade(@primary-color, 10%);
+  path {
+    fill: fade(@primary-color, 30%);
+   }
+}
+
+//логотип htmlacademy в футере
+.copyright__link:hover {
+  path {
+   fill: @primary-color;
+  }
+}
+
+.copyright__link:active {
+  path {
+   fill: fade(@primary-color, 30%);
+  }
+}

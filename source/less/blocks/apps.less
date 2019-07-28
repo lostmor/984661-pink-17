@@ -1,0 +1,42 @@
+.apps {
+  background-color: @background;
+
+  color: @secondary-color;
+  .font();
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 320px;
+  height: 271px;
+}
+
+.apps__list {
+  .reset-list();
+
+  margin-top: 32px;
+}
+
+.apps__item {
+  display: inline;
+  margin-right: 35px;
+}
+
+.apps__text {
+  .reset();
+
+  background-color: @background;
+
+  color: @secondary-color;
+  .font();
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+
+  margin-top: 28px;
+}
