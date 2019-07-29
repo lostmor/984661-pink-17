@@ -14,21 +14,22 @@
 
 .page-footer__logo-image {
   g path {
-   fill: @primary-color;
+    fill: @primary-color;
   }
 
   &:hover {
-  g path {
-   fill: @pink;
+    g path {
+      fill: @pink;
+    }
   }
-}
 
-&:active {
-  path {
-   fill: fade(@primary-color, 30%);
+  &:active {
+    path {
+      fill: fade(@primary-color, 30%);
+    }
+
+    g path {
+      fill: fade(@primary-color, 30%);
+    }
   }
-  g path {
-    fill: fade(@primary-color, 30%);
-   }
-}
 }

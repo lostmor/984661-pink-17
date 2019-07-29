@@ -2,29 +2,25 @@
   .reset-list();
 }
 
-path {
-  fill: @pink;
-}
-
 .social__link {
   border: 3px solid fade(@primary-color, 10%);
   border-radius: 50%;
   text-align: center;
 
   &:hover {
-  border: 3px solid @primary-color;
-}
+    border: 3px solid @primary-color;
+  }
 
-&:active {
-  border: 3px solid fade(@primary-color, 10%);
-  path {
-    fill: fade(@primary-color, 30%);
-   }
-}
+  &:active {
+    border: 3px solid fade(@primary-color, 10%);
+
+    path {
+      fill: fade(@primary-color, 30%);
+    }
+  }
 }
 
 .social__item {
   display: inline;
   margin: 9px;
 }
-
