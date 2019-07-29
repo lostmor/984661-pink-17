@@ -1,11 +1,11 @@
-Папка для файлов препроцессора Less.
+папка для файлов препроцессора Less.
 
-http://lesscss.org
+  http://lesscss.org
 
---
+  --
+  структура;
+less.http файлов:
 
-Структура файлов:
-
-less/
-| - style.less
-| - [другие *.less файлы]
+  less/
+  | - style.less
+  | - [другие *.less файлы];

@@ -1,0 +1,21 @@
+.page-header {
+  background-color: fade(@primary-color, 30%);
+}
+
+.page-header__logo-image {
+  path {
+    fill: @secondary-color;
+  }
+
+  &:hover {
+    path {
+      fill: @pink;
+    }
+  }
+
+  &:active {
+    path {
+      fill: fade(@secondary-color, 30%);
+    }
+  }
+}

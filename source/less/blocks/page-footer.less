@@ -1,0 +1,35 @@
+.page-footer {
+  .font();
+  font-size: 14px;
+  font-weight: 400;
+  color: @primary-color;
+  text-align: center;
+
+  background-color: @secondary-color;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo-image {
+  g path {
+    fill: @primary-color;
+  }
+
+  &:hover {
+    g path {
+      fill: @pink;
+    }
+  }
+
+  &:active {
+    path {
+      fill: fade(@primary-color, 30%);
+    }
+
+    g path {
+      fill: fade(@primary-color, 30%);
+    }
+  }
+}
