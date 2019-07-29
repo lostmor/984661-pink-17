@@ -40,3 +40,29 @@
 
   margin-top: 28px;
 }
+
+.apps__button {
+  font-size: 18px;
+  font-weight: 700;
+  color: @secondary-color;
+  text-align: center;
+
+  background-color: transparent;
+  border: 3px solid @secondary-color;
+  border-radius: 30px;
+  outline: none;
+
+  padding: 17px 36px 14px 37px;
+
+  margin-top: 25px;
+
+&:hover {
+  color: @pink;
+  background-color: @secondary-color;
+}
+
+&:active {
+  color: fade(@pink, 30%);
+  background-color: @secondary-color;
+}
+}
