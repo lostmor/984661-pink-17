@@ -1,11 +1,20 @@
-.social__list {
+.social-list {
   .reset-list();
 }
 
-.social__link {
+.social-list__link {
+  width: 46px;
+  height: 46px;
+  box-sizing: border-box;
   border: 3px solid fade(@primary-color, 10%);
   border-radius: 50%;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  path {
+    fill: @pink;
+  }
 
   &:hover {
     border: 3px solid @primary-color;
@@ -20,7 +29,7 @@
   }
 }
 
-.social__item {
+.social-list__item {
   display: inline;
-  margin: 9px;
+  margin: 0 9px;
 }

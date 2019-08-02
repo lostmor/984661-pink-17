@@ -1,12 +1,14 @@
 .page-header {
   background-color: fade(@primary-color, 30%);
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo-image {
-  path {
-    fill: @secondary-color;
-  }
-
   &:hover {
     path {
       fill: @pink;

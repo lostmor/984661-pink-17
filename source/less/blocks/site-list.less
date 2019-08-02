@@ -1,0 +1,27 @@
+.site-list {
+  .reset-list();
+}
+
+.site-list__item {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  text-align: center;
+  box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@secondary-color, 15%);
+
+  width: 320px;
+  height: 63px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  & a:hover {
+    color: @pink;
+  }
+
+  & a:active {
+    color: fade(@secondary-color, 30%);
+  }
+}
+

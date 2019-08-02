@@ -47,23 +47,26 @@
   </header>
 
   <main class="page-main">
-
     <section class="photo">
-      <h1 class=".photo__title">Фотографии пользователей</h1>
+      <h1 class="photo__title">Фотографии пользователей</h1>
     </section>
 
     <section class="users-photo">
       <h2 class="visually-hidden">Фотографии</h2>
-      <p class="users-photo__entry-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
-        хватает ваших?</p>
-
+      <div class="users-photo__entry entry-wrapper">
+        <p class="users-photo__entry-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+          хватает ваших?</p>
+      </div>
       <figure class="users-photo__item photo__item--user--panorama">
-        <span class="users-photo__mark">ПАНОРАМА ДНЯ</span>
+        <div class="users-photo__mark-wrapper">
+          <span class="users-photo__mark">ПАНОРАМА ДНЯ</span>
+        </div>
         <img class="users-photo__user-image" src="/img/panorama-mobile@1x.jpg" width="320" height="137"
           alt="Фото. Панорама дня»">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Анна</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(5 МИНУТ НАЗАД)</time>
+          <p class="users-photo__user-name">Анна
+            <time class="users-photo__time" datetime="2019-07-16">(5 МИНУТ НАЗАД)</time>
+          </p>
           <p class="users-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
             в
             перископе, задавайте свои вопросы!</p>
@@ -85,8 +88,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-car-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Левон</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(5 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Левон
+            <time class="users-photo__time" datetime="2019-07-16">(5 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -106,8 +109,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Антон</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(12 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Антон
+            <time class="users-photo__time" datetime="2019-07-16">(12 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Соседи будут рады!</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -127,8 +130,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-window-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Борис</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(20 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Борис
+            <time class="users-photo__time" datetime="2019-07-16">(20 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -148,8 +151,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-fair-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Сергей</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(25 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Сергей
+            <time class="users-photo__time" datetime="2019-07-16">(25 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Самая кубанская в мире!</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -169,8 +172,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-pov-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Максим</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(40 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Максим
+            <time class="users-photo__time" datetime="2019-07-16">(40 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Где снег-то!</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -190,8 +193,8 @@
       <figure class="users-photo__item photo__item--user">
         <img class="users-photo__user-image" src="/img/photo-wing-mobile@1x.jpg" width="320" height="137" alt="Фото">
         <figcaption class="users-photo__description">
-          <h3 class="users-photo__user-name">Надежда</h3>
-          <time class="users-photo__time" datetime="2019-07-16">(45 ЧАСОВ НАЗАД)</time>
+          <p class="users-photo__user-name">Надежда
+            <time class="users-photo__time" datetime="2019-07-16">(45 ЧАСОВ НАЗАД)</time></p>
           <p class="users-photo__text">Всем GM и взаимные лайки!</p>
           <button class="users-photo__like-button users-photo__like-button--nolike">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -230,9 +233,9 @@
           d="M60.462,28.016c-0.002-0.009-5.175-21.365-5.175-21.365C54.926,4.303,52.694,0,46.688,0 c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5c4.856,0,5.575,3.729,5.639,4.143l4.767,19.701h-2.073 c-0.742-5.927-5.802-10.531-11.927-10.531s-11.186,4.604-11.927,10.531h-1.82c-0.741-5.927-5.802-10.531-11.927-10.531 S6.235,20.917,5.493,26.844H3.42L8.187,7.143C8.25,6.729,8.97,3,13.826,3c0.829,0,1.5-0.671,1.5-1.5S14.655,0,13.826,0 C7.82,0,5.588,4.303,5.227,6.651c0,0-5.173,21.356-5.175,21.365c-0.266,1.109,0.531,1.826,1.426,1.826 c0.012,0,0.023,0.004,0.036,0.004h3.982c0.741,5.926,5.802,10.53,11.927,10.53s11.185-4.604,11.927-10.53h1.814 c0.742,5.926,5.802,10.53,11.927,10.53s11.186-4.604,11.927-10.53H59c0.012,0,0.023-0.004,0.036-0.004 C59.931,29.842,60.728,29.125,60.462,28.016z M26.315,29.844c-0.715,4.272-4.421,7.531-8.896,7.531s-8.18-3.259-8.896-7.531 c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.715-4.271,4.421-7.531,8.896-7.531s8.18,3.26,8.896,7.531 c0.082,0.489,0.135,0.988,0.135,1.5S26.397,29.355,26.315,29.844z M51.99,29.844c-0.716,4.272-4.421,7.531-8.896,7.531 c-4.475,0-8.181-3.259-8.896-7.531c-0.082-0.488-0.135-0.988-0.135-1.5s0.053-1.011,0.135-1.5c0.716-4.271,4.421-7.531,8.896-7.531 c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z" />
       </svg>
     </a>
-    <ul class=".social-list">
-      <li class=".social-list__item">
-        <a class=".social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy_ru">
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy_ru">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663"
             enable-background="new 0 0 17.5 14.663" xml:space="preserve">
@@ -245,8 +248,8 @@
           </svg>
         </a>
       </li>
-      <li class=".social-list__item">
-        <a class=".social-list__link social-list__link--facebook" href="https://facebook.com/htmlacademy">
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--facebook" href="https://facebook.com/htmlacademy">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944"
             enable-background="new 0 0 8.673 18.944" xml:space="preserve">
@@ -255,8 +258,8 @@
           </svg>
         </a>
       </li>
-      <li class=".social-list__item">
-        <a class=".social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg
+      <li class="social-list__item">
+        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg
             version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96"
             enable-background="new 0 0 14.64 13.96" xml:space="preserve">
@@ -267,7 +270,7 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано:</span>
+      <span class="copyright__text">Разработано</span>
       <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="34px" viewBox="0 0 60 60">
           <path fill="#2E368F"
