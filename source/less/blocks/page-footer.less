@@ -8,7 +8,7 @@
   background-color: @secondary-color;
 
   width: 320px;
-  min-height: 284px;
+  height: 284px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -32,3 +32,25 @@
     }
   }
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 660px;
+    height: 127px;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+    height: 197px;
+    flex-direction: row;
+
+    font-size: 18px;
+  }
+  .page-footer__logo-image {
+
+  }
+}
+

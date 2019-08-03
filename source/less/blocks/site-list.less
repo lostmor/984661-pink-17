@@ -9,9 +9,9 @@
   text-align: center;
   box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@secondary-color, 15%);
 
-  width: 320px;
-  height: 63px;
-  display: inline-flex;
+  width: 100%;
+  min-height: 63px;
+  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -25,3 +25,19 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .site-list {
+    text-transform: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 940px;
+    .reset();
+  }
+
+  .site-list__item {
+    text-transform: none;
+    box-shadow: none;
+  }
+}
