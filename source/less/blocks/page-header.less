@@ -30,12 +30,29 @@
   &--closed .burger {
     width: 50px;
     height: 24px;
+
+    &:hover {
+      color: @pink;
+    }
+
+    &:active {
+      color: fade(@secondary-color, 30%);
+    }
   }
 
   &--opened .cross {
     width: 23px;
     height: 22px;
+
+    &:hover {
+      color: @pink;
+    }
+
+    &:active {
+      color: fade(@secondary-color, 30%);
+    }
   }
+
   &--opened {
     background-color: @primary-color;
     box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@black, 15%);
