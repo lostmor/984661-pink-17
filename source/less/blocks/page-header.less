@@ -14,6 +14,34 @@
   align-items: center;
   padding: 0 20px;
   background-color: fade(black, 30%);
+
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  &--closed .cross {
+    display: none;
+  }
+
+  &--opened .burger {
+    display: none;
+  }
+
+  &--closed .burger {
+    width: 50px;
+    height: 24px;
+  }
+
+  &--opened .cross {
+    width: 23px;
+    height: 22px;
+  }
+  &--opened {
+    background-color: @primary-color;
+    box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@black, 15%);
+    border-bottom: 1px solid @black;
+  }
+
 }
 
 .page-header__logo-image {
@@ -41,6 +69,5 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-
   }
 }

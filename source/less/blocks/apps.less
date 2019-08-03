@@ -13,12 +13,12 @@
   justify-content: center;
 
   width: 320px;
-  height: 271px;
+  min-height: 271px;
 }
 
 .apps__list {
   .reset-list();
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 .apps__item {
@@ -35,9 +35,10 @@
   .font();
   font-size: 14px;
   font-weight: 300;
+  line-height: 24px;
   text-align: center;
 
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .apps__button {
@@ -49,11 +50,15 @@
   background-color: transparent;
   border: 3px solid @secondary-color;
   border-radius: 30px;
-  outline: none;
+  margin-top: 20px;
 
-  padding: 17px 36px 14px 37px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-  margin-top: 25px;
+  width: 281px;
+  height: 55px;
 
   &:hover {
     color: @pink;
