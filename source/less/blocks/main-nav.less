@@ -20,6 +20,10 @@
   display: block;
   cursor: pointer;
 
+  &--nojs {
+    display: none;
+  }
+
   &--burger .cross {
     display: none;
   }
@@ -31,24 +35,11 @@
   &--burger .burger {
     width: 50px;
     height: 24px;
-
   }
 
   &--cross .cross {
     width: 23px;
     height: 22px;
-  }
-
-  &:hover {
-    path {
-      fill: @pink;
-    }
-  }
-
-  &:active {
-    path {
-      fill: fade(@pink, 30%);
-    }
   }
 }
 
