@@ -5,7 +5,7 @@
 
   position: relative;
 
-  width: 320px;
+  width: 100%;
   min-height: 51px;
   margin: 0 auto;
 
@@ -20,21 +20,17 @@
   display: block;
   cursor: pointer;
   &--burger {
-
     &:hover {
-      fill: @pink;
+      fill: @pink; //не закрашиваются
     }
-
     &:active {
       fill: fade(@secondary-color, 30%);
     }
   }
   &--cross {
-
     &:hover {
       fill: @pink;
     }
-
     &:active {
       fill: fade(@secondary-color, 30%);
     }

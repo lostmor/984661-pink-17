@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -30,27 +30,11 @@
   &--closed .burger {
     width: 50px;
     height: 24px;
-
-    &:hover {
-      color: @pink;
-    }
-
-    &:active {
-      color: fade(@secondary-color, 30%);
-    }
   }
 
   &--opened .cross {
     width: 23px;
     height: 22px;
-
-    &:hover {
-      color: @pink;
-    }
-
-    &:active {
-      color: fade(@secondary-color, 30%);
-    }
   }
 
   &--opened {
@@ -58,7 +42,6 @@
     box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@black, 15%);
     border-bottom: 1px solid @black;
   }
-
 }
 
 .page-header__logo-image {
@@ -72,6 +55,12 @@
     path {
       fill: fade(@secondary-color, 30%);
     }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    height: 110px;
   }
 }
 

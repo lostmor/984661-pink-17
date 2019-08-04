@@ -1,4 +1,4 @@
-.entry-wrapper {
+.entry {
   background-color: @secondary-color;
 
   display: flex;
@@ -6,10 +6,10 @@
   justify-content: center;
   align-items: center;
   min-height: 184px;
-  width: 320px;
+  width: 100%;
 }
 
-.users-photo__entry-text {
+.entry__text {
   color: @primary-color;
   .font();
   font-size: 14px;
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .users-photo__entry-text {
+  .entry__text {
     font-size: 18px;
   }
 }

@@ -1,0 +1,44 @@
+.title__text {
+  color: @secondary-color;
+  .font();
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px 20px 0 20px;
+  margin-top: 67px;
+}
+
+.title {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: @background;
+  background-size: 320px 462px;
+  background-position: top center;
+  margin-top: -67px;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 237px;
+  &--index {
+    height: 462px;
+    background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, auto;
+    background-position-y: 176px, center;//кривое пложение картинки с айфоном в руке
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    width: 100%;
+    min-height: 729px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+  }
+
+  .title__text {
+    font-size: 50px;
+  }
+}
