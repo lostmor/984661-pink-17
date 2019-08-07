@@ -62,6 +62,96 @@
       <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
         карту!</p>
     </section>
+    <div class="page-form">
+      <section class="page-form__personal-data">
+        <form class="personal-data__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="personal-data__label">
+            Фамилия:
+            <input class="personal-data__input" type="text" name="user-surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="personal-data__label">
+            Имя:
+            <input class="personal-data__input" type="text" name="user-name" placeholder="Укажите ваше имя *">
+          </label>
+          <label class="personal-data__label">
+            Отчество:
+            <input class="personal-data__input" type="text" name="user-patronymic" placeholder="Ну и отчество тоже *">
+          </label>
+        </form>
+      </section>
+      <section class="page-form__personal-achievements">
+        <form class="personal-achievements__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="personal-achievements__field">
+            <legend class="personal-achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="shark" type="checkbox" checked>
+              Сделал селфи с акулой
+            </label>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="beach" type="checkbox" checked>
+              Обгорел на пляже
+            </label>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="chuck" type="checkbox">
+              Видел Чака Норриса
+            </label>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="souvenirs" type="checkbox">
+              Накупил сувениров
+            </label>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="tower" type="checkbox" checked>
+              Удержал башню
+            </label>
+            <label class="personal-achievements__label">
+              <input class="personal-achievements__checkbox" name="hotel" type="checkbox">
+              Разгромил отель
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="page-form__user-contacts">
+        <form class="user-contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="user-contacts__label">
+            Номер телефона
+            <input class="user-contacts__input" type="text" name="user-phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="user-contacts__label">
+            Адрес почты
+            <input class="user-contacts__input" type="text" name="user-mail" placeholder="Введите почту *">
+          </label>
+        </form>
+      </section>
+      <section class="page-form__travel-apps">
+        <form class="travel-apps__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="travel-apps__field">
+            <legend class="travel-apps__legend">С каким приложением путешествовали?</legend>
+            <label class="travel-apps__label">
+              <input class="travel-apps__radiobutton" type="radio" name="travel-apps-name" value="iOS" checked>
+              Pink для iOS
+            </label>
+            <label class="travel-apps__label">
+              <input class="travel-apps__radiobutton" type="radio" name="travel-apps-name" value="Android">
+              Pink на Android
+            </label>
+            <label class="travel-apps__label">
+              <input class="travel-apps__radiobutton" type="radio" name="travel-apps-name" value="Windows">
+              Windows Phone
+            </label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="page-form__user-impressions">
+        <form class="user-impressions__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="user-impressions__label">
+            Опишите свои эмоции
+            <textarea name="trip-emotioms" cols="20" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </label>
+        </form>
+      </section>
+      <button class="page-form__button" type="button">Отправить форму</button>
+      <p class="page-form__note">* — обязательные поля</p>
+    </div>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo-image" href="index.html">
