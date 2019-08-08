@@ -1,0 +1,66 @@
+.effect {
+  .font();
+  color: @black;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px;
+  margin-top: -2px;
+  width: 100%;
+}
+
+.effect__timer {
+  width: 238px;
+  path {
+    fill: #dedede;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.effect__text {
+  color: @primary-color;
+  font-weight: 400;
+}
+
+.effect__study-link {
+  line-height: 24px;
+  text-decoration: underline;
+  color: @pink;
+}
+
+.effect__wrapper {
+  width: 298px;
+  // height: 202px;
+}
+
+@media (max-width: @mobile-width) {
+  .effect {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    margin: 0 87px;
+    background-color: @grey;
+  }
+
+  .effect__timer {
+    width: 298px;
+  }
+
+  .effect__title {
+    line-height: 30px;
+  }
+
+  .effect__wrapper {
+    width: 527px;
+  }
+}
