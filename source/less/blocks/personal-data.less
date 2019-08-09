@@ -1,0 +1,57 @@
+.personal-data {
+  background-color: @secondary-color;
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+}
+
+.personal-data__label {
+  color: @pink;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.personal-data__input {
+  color: @primary-color;
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  display: inline-flex;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-left: 18px;
+  margin-left: 5px;
+
+  &--patronimic {
+    margin-bottom: 42px;
+  }
+
+  &:hover {
+    border-color: @primary-color;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .personal-data {
+    flex-direction: row;
+    width: 630px;
+  }
+
+  .personal-data__input--surname {
+    width: 521px;
+  }
+
+  .personal-data__input--name {
+    width: 561px;
+  }
+
+  .personal-data__input--patronimic {
+    width: 522px;
+  }
+}
