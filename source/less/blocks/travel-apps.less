@@ -20,7 +20,24 @@
   padding-top: 40px;
 }
 
-.travel-apps__field {
-  margin: 0;
-  border: none;
+@media (max-width: @mobile-width) {
+  .travel-apps__field {
+    margin: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travel-apps__field {
+    width: 616px;
+    height: 549px;
+  }
+
+  .travel-apps {
+    background-color: transparent;
+  }
+
+  .travel-apps__legend {
+    padding: 0;
+  }
 }

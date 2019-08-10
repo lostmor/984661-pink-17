@@ -61,22 +61,25 @@
     <section class="entry">
       <p class="entry__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
         карту! Пожалуйста, заполните форму ниже:</p>
-        <!-- последнее предложение как скрыть в мобильной? -->
+      <!-- последнее предложение как скрыть в мобильной? -->
     </section>
     <div class="page-form">
       <section class="page-form__personal-data personal-data">
         <form class="personal-data__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="personal-data__label personal-data__label--surname">
             Фамилия:
-            <input class="personal-data__input personal-data__input--surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            <input class="personal-data__input personal-data__input--surname" type="text" name="surname"
+              placeholder="Укажите фамилию *">
           </label>
           <label class="personal-data__label personal-data__label--name">
             Имя:
-            <input class="personal-data__input personal-data__input--name" type="text" name="name" placeholder="Укажите ваше имя *">
+            <input class="personal-data__input personal-data__input--name" type="text" name="name"
+              placeholder="Укажите ваше имя *">
           </label>
           <label class="personal-data__label personal-data__label--patronimic">
             Отчество:
-            <input class="personal-data__input personal-data__input--patronimic" type="text" name="patronymic" placeholder="Ну и отчество тоже *">
+            <input class="personal-data__input personal-data__input--patronimic" type="text" name="patronymic"
+              placeholder="Ну и отчество тоже *">
           </label>
         </form>
       </section>
@@ -113,14 +116,18 @@
       </section>
       <section class="page-form__user-contacts user-contacts">
         <form class="user-contacts__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="user-contacts__label">
-            Номер телефона
-            <input class="user-contacts__input" type="text" name="phone" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="user-contacts__label">
-            Адрес почты
-            <input class="user-contacts__input user-contacts__input--mail" type="text" name="mail" placeholder="Введите почту *">
-          </label>
+          <fieldset class="user-contacts__field">
+            <legend class="user-contacts__legend">Контактная информация</legend>
+            <label class="user-contacts__label">
+              Номер телефона
+              <input class="user-contacts__input" type="text" name="phone" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="user-contacts__label">
+              Адрес почты
+              <input class="user-contacts__input user-contacts__input--mail" type="text" name="mail"
+                placeholder="Введите почту *">
+            </label>
+          </fieldset>
         </form>
       </section>
       <section class="page-form__travel-apps travel-apps">
@@ -144,13 +151,15 @@
       </section>
       <section class="page-form__user-impressions user-impressions">
         <form class="user-impressions__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="user-impressions__label">
-            Опишите свои эмоции
-            <textarea class="user-impressions__textarea" name="trip-emotioms" cols="25" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </label>
+          <fieldset class="user-impressions__field">
+              <legend class="user-impressions__legend">Опишите свои эмоции</legend>
+              <textarea class="user-impressions__textarea" name="trip-emotioms" cols="25"
+                rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
         </form>
       </section>
-      <button class="page-form__button" type="button"> <span class="page-form__button__text">Отправить форму</span></button>
+      <button class="page-form__button" type="button"> <span class="page-form__button__text">Отправить
+          форму</span></button>
       <p class="page-form__note">* — обязательные поля</p>
       <!-- звездочка и текст должны быть разного цвета, как сделать? -->
     </div>
