@@ -1,37 +1,60 @@
 .main-nav {
   .font();
   font-size: 18px;
-  font-weight: 400;
 
-  &--opened {
-    background-color: @primary-color;
+  position: relative;
 
-    position: relative;
+  width: 100%;
+  min-height: 51px;
+  margin: 0 auto;
 
-    width: 320px;
-    min-height: 66px;
-    margin: 0 auto;
+  background-color: @primary-color;
+
+  &--closed {
+    display: none;
   }
 }
 
-.site-list {
-  .reset-list();
-}
+.main-nav__toggle-icon {
+  display: block;
+  cursor: pointer;
 
-.site-list__item {
-  font-weight: 700;
-  text-transform: uppercase;
+  &--burger {
+    &:hover {
+      fill: @pink; //не закрашиваются
+    }
 
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 fade(@secondary-color, 15%);
-
-  & a:hover {
-    color: @pink;
+    &:active {
+      fill: fade(@secondary-color, 30%);
+    }
   }
 
-  & a:active {
-    color: fade(@secondary-color, 30%);
+  &--cross {
+    &:hover {
+      fill: @pink;
+    }
+
+    &:active {
+      fill: fade(@secondary-color, 30%);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    background-color: transparent;
+    margin: 0;
+    position: absolute;
+
+    &--closed {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 130px;
+    }
   }
 }

@@ -1,31 +1,28 @@
 .users-photo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .users-photo__item {
   .font();
+  .reset();
   font-size: 14px;
   color: @primary-color;
   font-weight: 400;
 
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-.users-photo__entry-text {
+.users-photo__description {
   background-color: @grey;
-}
+  .reset();
 
-.users-photo__mark {
-  color: @secondary-color;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
+  width: 280px;
+  padding-left: 17px;
+  padding-bottom: 28px;
 }
 
 .users-photo__user-name {
@@ -38,27 +35,87 @@
   text-transform: uppercase;
 }
 
+.users-photo__text {
+  margin-top: -10px;
+  line-height: 24px;
+}
+
 .users-photo__like-counter {
   color: @pink;
   font-size: 12px;
   text-transform: uppercase;
+  margin-left: 19px;
 }
 
-.users-photo__description {
-  background-color: @grey;
-
-  width: 280px;
-  height: 192px;
+.users-photo__mark-wrapper {
+  background-color: @pink;
+  width: 140px;
+  height: 36px;
+  text-align: center;
 
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
 }
 
-
-.users-photo__text {
-  flex-grow: 1;
+.users-photo__mark {
+  color: @secondary-color;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.users-photo__like-counter::before {
-  margin-left: 19px;
+.users-photo__like-button {
+  color: @pink;
+
+  path {
+    fill: @pink;
+  }
+
+  .users-photo__like-counter {
+    margin-left: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__user-image {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      height: 509px;
+    }
+  }
+
+  .users-photo__description {
+    width: 300px;
+    height: 155px;
+
+    &--panorama {
+      width: 620px;
+      height: 121px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .users-photo__text {
+    &--panorama {
+      width: 510px;
+    }
+  }
+
+  .users-photo__like-button {
+    &--panorama {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__description {
+    height: 155px;
+  }
 }

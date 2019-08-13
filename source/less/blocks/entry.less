@@ -1,0 +1,42 @@
+.entry {
+  background-color: @secondary-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 184px;
+  width: 100%;
+}
+
+.entry__text {
+  color: @primary-color;
+  .font();
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0 38px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .entry__text {
+    font-size: 18px;
+    width: 485px;
+
+    &--photo {
+      width: 440px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .entry__text {
+    font-size: 18px;
+    width: 755px;
+
+    &--photo {
+      width: 571px;
+    }
+  }
+}

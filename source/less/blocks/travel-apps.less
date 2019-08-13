@@ -1,0 +1,43 @@
+.travel-apps {
+  background-color: @grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.travel-apps__form {
+  width: 275px;
+}
+
+.travel-apps__legend {
+  color: @pink;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 40px;
+}
+
+@media (max-width: @mobile-width) {
+  .travel-apps__field {
+    margin: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travel-apps__field {
+    width: 616px;
+    height: 549px;
+  }
+
+  .travel-apps {
+    background-color: transparent;
+  }
+
+  .travel-apps__legend {
+    padding: 0;
+  }
+}

@@ -1,0 +1,44 @@
+.personal-achievements {
+  background-color: @grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.personal-achievements__form {
+  width: 275px;
+}
+
+.personal-achievements__legend {
+  color: @pink;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 40px;
+}
+
+.personal-achievements__field {
+  margin: 0;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .personal-achievements {
+    background-color: transparent;
+  }
+
+  .personal-achievements__form {
+    width: 616px;
+  }
+
+  .personal-achievements__field {
+    border: 2px solid #e5e5e5;
+  }
+
+  .personal-achievements__legend {
+    padding: 0;
+  }
+}
