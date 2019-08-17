@@ -17,7 +17,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-top: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
 }
 
 @media (max-width: @mobile-width) {
@@ -30,14 +32,59 @@
 @media (min-width: @tablet-width) {
   .travel-apps__field {
     width: 616px;
-    height: 549px;
+    height: 295px;
   }
 
   .travel-apps {
     background-color: transparent;
+    margin-bottom: 60px;
+    order: 2;
   }
 
-  .travel-apps__legend {
-    padding: 0;
+  .travel-apps__icon {
+    margin-left: -20px;
   }
+
+  .travel-apps__label {
+    padding-left: 40px;
+  }
+
+  .travel-apps__text {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-apps__field {
+    width: 431px;
+    height: 297px;
+  }
+}
+
+.travel-apps__label {
+  padding-left: 40px;
+  padding-bottom: 47px;
+  display: block;
+}
+
+.travel-apps__radiobutton {
+  appearance: none;
+  position: absolute;
+}
+
+.travel-apps__icon {
+  position: absolute;
+  margin-left: -60px;
+  display: inline-block;
+  width: 35px;
+  height: 36px;
+  background-size: cover;
+}
+
+.travel-apps__radiobutton[type="radio"] + .travel-apps__icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABGlBMVEUAAAD////////V1dXb29vq6uru7u7f39/h4eHm5ubn5+fl5eXm5ubp6enj4+Pm5ubo6Ojl5eXl5eXn5+fn5+fn5+fo6Ojl5eXl5eXl5eXm5ubm5ubm5ubn5+fl5eXl5eXm5ubm5ubl5eXm5ubm5ubm5ubl5eXn5+fn5+fm5ubm5ubm5ubm5ubn5+fm5ubm5ubm5ubl5eXm5ubm5ubm5ubm5ubm5ubm5ubn5+fl5eXl5eXm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubn5+fm5ubm5ubm5ubm5ubm5ubm5ubm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7y8vLz8/P09PT4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7///8RING/AAAASnRSTlMAAQIGBwwPEBEUFR0eIiUoQkRFSUpLTE1OT1BRU1ZXWIaHioyOkJSdnqKtrq+ytLq7vb6/wMHCw8bHyMnP19jg4eLk5ebn7vL6+zv1LKkAAAGVSURBVBgZhcELX9JQHAbgt8RKDbU0k8pLNwMLUUmjm7dS6T0M2jhjbef8v//XUDF+gGw7z4MUD+E0s7717YLkxfet9Vlk2thhX4t9OxtItVonVRBGRkRMFAaKrL/AhEKF9EIjQyb0yEoB44oNKi13acVGEaMWTtmJZVLc4ekChopnDKyksQHPihiYajCQLAG/TuG/CjtWstgOK7i1QhVLtljxOfr2qCWP5h5urNGzksd6XMO1KkPJF7IK4AGVkXxG8RHwkoG4BHwFvKMWl5DvgUNG4hLxC3DORFwSngNNWnGx/AOQ4kbeR5NWXCybwC8m4pLwN/CZPXGJeAC8oRYXzbfAKn1x8VkCpqmM5DOK0wA+Uks+zU+4VqJnJY/1WMKNXXYlT5e76HtCFUu2WPEpbpXZNpLFtFnGwD59K+msz/o9DMwd8a+RNNbn0RyG5n/Q+yeT4jZ/zmPUTJWqa2Wc7SruP8YdH8iWNjJkdIssY9JijaSve4kVm/S0T7K2iFTPtjlqewWZCkubteNLXp7UXi8XMOYKKYagDAYN2dsAAAAASUVORK5CYII=");
+}
+
+.travel-apps__radiobutton[type="radio"]:checked + .travel-apps__icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABj1BMVEUAAAD////////V1dXb29vq6uru7u7f39/h4eHm5ubn5+fl5eXm5ubp6enj4+Pm5ubo6Ojl5eXl5eXn5+fn5+fn5+fo6Ojl5eXl5eXl5eXm5ubm5ubm5ubn5+fl5eXl5eXm5ubm5ubl5eXm5ubm5ubm5ubl5eXn5+fn5+fm5ubm5ubm5ubm5ubn5+fm5ubm5ubm5ubl5eXm5ubm5ubm5ubm5ubm5ubm5ubn5+fl5eXl5eXm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubn5+fm5ubm5ubm5ubm5ubm5ubm5ubm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7y8vLz8/P0I1f0JVj09PT2LV73M2L4OGf4OWj4Pmv4P2z4+Pj5QW35+fn6SXP6T3f6+vr7UHj7U3r7+/v8V378XYL8/Pz9W4D9Yob9aIr9/f3+a43+/v7/cJD/cZD/dJP/scP/s8P/tsf/t8j/u8v/vcz/v87/wc//4uj/4un/4+n/5+z/6O3/6u///Pz//f7//v7///+0taIfAAAASnRSTlMAAQIGBwwPEBEUFR0eIiUoQkRFSUpLTE1OT1BRU1ZXWIaHioyOkJSdnqKtrq+ytLq7vb6/wMHCw8bHyMnP19jg4eLk5ebn7vL6+zv1LKkAAAIGSURBVBgZhcEHQ9NQGAXQqxQVsYALQQWcSFEow4ELBGV4Q6hJE4vMglotGp64Byrg98OF1pcE2tRzUMZB/FdNa/udMZJjd9tbDyNSWzcLJlnQ3YaymvpJw85kPRHxshnbIPtPo0QsQZoZTwJexiQTMewWH6DhyF6OwYE4wuqHmcpJqVyKw/UIxEdoKylH2RyJQ6saoC1RbN6uwj8JppREUSkmUNRIIyfRcgZPoaCXjlTisBc7WmgqqUSZbMG2LmYksPnhzezT2bcfNyWQYReAAzQ88f1cdouW18XnGTwEnKEtvh8zrjazLj6bZ4FLdETbfOEGXm6JluFl4Cazon1ywz6LluUtYJR50VbdsFXR8hwFJqhEm3fD5kVTfAyQ4pt2w6bFR+7HBJVoi27YomiKE8BD5kVbc8PWRMvzEXCdC6J9ccO+ipblDeACHdG2XrmBlT+iObwINNES3685V5v7LT6LzUA1DU98G6/dopUN8XkGqwFcpSMh394tPVt6/11CHF7DtmaaSipRJpuxo4dpqSTNHhQcpZGTaDmDx1DUwSlPonhT7IDWR0tJecpi/z5otYN84kk5yuJgLQJ192g+l1K5Kd6vQ1hNF420kt1U2mDfEexxhZx0PAl4ziTZgVINSZKWs5BXovILjkUy2YCyTnYyrLMRkWLHzyWHxjn+IHn+RAy7/AXDHAxwYsB6XAAAAABJRU5ErkJggg==");
 }

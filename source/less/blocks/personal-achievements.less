@@ -17,7 +17,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-top: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
 }
 
 .personal-achievements__field {
@@ -38,7 +40,70 @@
     border: 2px solid #e5e5e5;
   }
 
-  .personal-achievements__legend {
-    padding: 0;
+  // .personal-achievements__legend {
+  //   padding: 0;
+  // }
+}
+
+.personal-achievements__label {
+  padding-left: 40px;
+  padding-bottom: 47px;
+  display: block;
+}
+
+.personal-achievements__checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.personal-achievements__icon {
+  position: absolute;
+  margin-left: -60px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+}
+
+.personal-achievements__checkbox[type="checkbox"] + .personal-achievements__icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnAgMAAADxzbmmAAAADFBMVEXo6Ojm5ubm5ub///86c/hbAAAAAnRSTlMsw03PNZwAAAAhSURBVBjTY5BaBQUTGLJgzCUM6/9DwYtR5oAwkeICEUMA6pxnTaIgqbwAAAAASUVORK5CYII=");
+}
+
+.personal-achievements__checkbox[type="checkbox"]:checked + .personal-achievements__icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnBAMAAAB+jUwGAAAAJ1BMVEXo6Ojm5ubm5ub0I1f3MmL5QW36T3j/epn/h6L/sMH/2OD/8vT///+gHXlrAAAAAnRSTlMsw03PNZwAAACDSURBVCjPY2BUQgeKDAxCGIJKAgxKZ9DBIYUhKrjEB1PwlDMWwSUmazAETzp7YZo5GaQQTfCksRem7RCFqIJQhTDBE9VICmGCh832gBRmofjouHE2UCFIBtnMYrM9J0ESKIJApXCFCNuLTeEKEYInjOEKkdw5OXvoxzs+QaxpHlvuAACTEfNj75j6/wAAAABJRU5ErkJggg==");
+}
+
+@media (min-width: @tablet-width) {
+  .personal-achievements {
+    width: 616px;
+    height: 549px;
+    margin-bottom: 60px;
+    order: 4;
+  }
+
+  .personal-achievements__icon {
+    margin-left: -20px;
+  }
+
+  .personal-achievements__label {
+    padding-left: 40px;
+  }
+
+  .personal-achievements-text {
+    margin-left: 40px;
+  }
+
+  // .personal-achievements__field {
+  //   margin-bottom: 50px;
+  // }
+}
+
+@media (min-width: @desktop-width) {
+  .personal-achievements {
+    width: 936px;
+    height: 228px;
+    flex-direction: row;
+    // align-items: center;
+    // flex-wrap: wrap;
   }
 }
