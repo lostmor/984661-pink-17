@@ -1,0 +1,115 @@
+.editor {
+  margin-top: 23px;
+  background-color: @grey;
+}
+
+.editor-icon {
+  fill: fade(@primary-color, 50%);
+
+  &:active {
+    fill: @pink;
+  }
+
+  &:hover {
+    fill: fade(@primary-color, 30%);
+  }
+}
+
+.editor__tools {
+  .reset-list();
+}
+
+.editor__button {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  border-radius: 30px;
+  margin-top: 20px;
+
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 280px;
+  height: 55px;
+
+  &--upload {
+    color: @pink;
+    border: 3px solid @pink;
+
+    &:hover {
+      color: @secondary-color;
+      border: 3px solid @pink;
+      background-color: @pink;
+    }
+
+    &:active {
+      color: fade(@secondary-color, 30%);
+      border: 3px solid @pink;
+      background-color: @pink;
+    }
+  }
+
+  &--cancel {
+    color: fade(@primary-color, 10%);
+    border: 3px solid fade(@primary-color, 10%);
+
+    &:hover {
+      color: fade(@primary-color, 30%);
+      border: 3px solid fade(@primary-color, 30%);
+    }
+
+    &:active {
+      color: fade(@primary-color, 30%);
+      border: 3px solid fade(@primary-color, 30%);
+      background-color: fade(@primary-color, 30%);
+    }
+  }
+}
+
+.editor__wrapper {
+  width: 318px;
+  min-height: 757px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: @mobile-width) {
+  .editor__contrast-input {
+    display: none;
+  }
+
+  .editor__fill-input {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .editor__tools li {
+    border-bottom: 1px solid fade(@primary-color, 10%);
+  }
+
+  .editor__wrapper {
+    width: 700px;
+    min-height: 511px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .editor__buttons {
+    width: 270px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .editor {
+    width: 940px;
+    height: 514px;
+  }
+}

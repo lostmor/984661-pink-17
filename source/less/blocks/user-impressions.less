@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 276px;
+  text-align: center;
 }
 
 .user-impressions__legend {
@@ -12,6 +13,8 @@
   font-size: 14px;
   margin-left: 20px;
   margin-bottom: 15px;
+  margin-top: 35px;
+  text-align: center;
 }
 
 .user-impressions__textarea {
@@ -25,18 +28,28 @@
   margin-bottom: 20px;
   width: 276px;
   height: 197px;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+@media (max-width: @mobile-width) {
+  .user-impressions__field {
+    border: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .user-impressions {
     text-align: center;
     width: 616px;
+    order: 6;
   }
 
   .user-impressions__textarea {
     width: 496px;
     height: 189px;
-    text-align: center;
+    text-align: left;
+    padding: 15px 20px;
   }
 }
 
@@ -49,7 +62,6 @@
   .user-impressions__textarea {
     width: 816px;
     height: 124px;
-    text-align: center;
   }
 
   .user-impressions__legend {

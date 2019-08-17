@@ -20,14 +20,6 @@
   justify-content: center;
   width: 100%;
   min-height: 237px;
-
-  &--index {
-    height: 462px;
-    background-image: url("../../img/iphone-hand-mobile@1x.png"), url("../../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain, auto;
-    background-position-y: 176px, center;//кривое пложение картинки с айфоном в руке
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -38,25 +30,12 @@
     background-repeat: no-repeat;
     background-size: 1200px auto;
     margin-top: -110px;
-
-    &--index {
-      height: 730px;
-      background-image: url("../../img/iphone-hand-tablet@1x.png"), url("../../img/bg-back-tablet@1x.jpg");
-      background-repeat: no-repeat, no-repeat;
-      background-size: contain, auto;
-      justify-content: flex-start;
-    }
   }
 
   .title__text {
     font-size: 50px;
     padding: 81px 91px 0 95px;
     margin-top: 83px;
-
-    &--index {
-      width: 186px;
-      .reset();
-    }
   }
 }
 
@@ -67,12 +46,16 @@
     background-image: url("../../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 2560px auto;
-    margin-top: -110px;
+    margin-top: -150px;
   }
 
   .title__text {
     font-size: 50px;
     padding: 71px 229px 0 232px;
     margin-top: 83px;
+  }
+
+  .title-wrapper {
+    width: 700px; //ppp
   }
 }

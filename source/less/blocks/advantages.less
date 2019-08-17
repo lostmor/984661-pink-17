@@ -34,6 +34,7 @@
     fill: @secondary-color;
   }
   margin-top: -36px;
+  width: 100%;
 }
 
 .advantages__list {
@@ -71,7 +72,7 @@
   .advantages {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
@@ -84,7 +85,18 @@
   }
 
   .advantages__hello-image {
-    display: none;
+    order: 1;
+    width: 237px;
+    height: auto;
+    margin-right: 40px;
+  }
+
+  .advantages__description {
+    text-align: left;
+  }
+
+  .advantages__title {
+    text-align: left;
   }
 }
 
@@ -96,10 +108,13 @@
   .advantages__title {
     font-size: 30px;
     margin-top: 60px;
+    text-align: center;
   }
 
   .advantages__description {
+    margin-top: 25px;
     font-size: 18px;
+    text-align: center;
   }
 
   .advantages__images {
@@ -119,5 +134,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .advantages__hello-image {
+    display: none;
   }
 }

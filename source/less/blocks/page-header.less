@@ -45,15 +45,27 @@
 }
 
 .page-header__logo-image {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
+
   &:hover {
     path {
-      fill: @pink;
+      fill: @pink; //перестали закрашиваться
     }
   }
 
   &:active {
     path {
-      fill: fade(@secondary-color, 30%);
+      fill: fade(@secondary-color, 30%); //перестали закрашиваться
     }
   }
 }
@@ -61,6 +73,20 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     height: 110px;
+  }
+
+  .page-header__logo-image {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
@@ -74,5 +100,17 @@
 
   .page-header__logo-image {
     margin-left: 130px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
