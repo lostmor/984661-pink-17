@@ -1,22 +1,34 @@
 .editor {
   margin-top: 23px;
   background-color: @grey;
+  width: 100%;
+}
+
+.editor-icons {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .editor-icon {
-  fill: fade(@primary-color, 50%);
+  fill: fade(@primary-color, 30%);
+  cursor: pointer;
+
+  &--contrast path {
+    fill: fade(@primary-color, 30%);
+  }
 
   &:active {
     fill: @pink;
   }
 
   &:hover {
-    fill: fade(@primary-color, 30%);
+    fill: fade(@primary-color, 50%);
   }
-}
-
-.editor__tools {
-  .reset-list();
 }
 
 .editor__button {
@@ -71,39 +83,152 @@
 
 .editor__wrapper {
   width: 318px;
-  min-height: 757px;
+  height: 757px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (max-width: @mobile-width) {
-  .editor__contrast-input {
-    display: none;
-  }
+.editor__wraper-buttons {
+  text-align: center;
+}
 
-  .editor__fill-input {
-    display: none;
+.editor__range-controls {
+  position: relative;
+  margin: 30px 0;
+}
+
+.editor__range-controls .editor__scale {
+  width: 240px;
+  height: 2px;
+  background: @black;
+}
+
+.editor__range-toggle {
+  position: absolute;
+  top: -7px;
+  left: 200px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @grey;
+  cursor: pointer;
+}
+
+.editor__range-container {
+  width: 100%;
+  border-bottom: 1px solid fade(@black, 10%);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: @mobile-width) {
+  .editor__range-controls {
+    &--fill {
+      display: none;
+    }
+
+    &--contrast {
+      display: none;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
-  .editor__tools li {
-    border-bottom: 1px solid fade(@primary-color, 10%);
+  .editor__wrapper {
+    .reset();
+    width: 625px;
+    height: 511px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
-  .editor__wrapper {
-    width: 700px;
-    min-height: 511px;
+  .editor__wraper-buttons {
+    width: 260px;
+  }
+
+  .edit_tool {
+    height: 400px;
+  }
+
+  .editor__range-controls .editor__scale {
+    width: 202px;
+  }
+
+  .editor__range-container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 185px;
+    border: 0;
+    margin-left: -80px;
+  }
+
+  .editor-icons {
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    margin-left: -80px;
+  }
+
+  .editor__filter {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-left: -45px;
   }
 
-  .editor__buttons {
-    width: 270px;
+  .editor__scale {
+    width: 202px;
+  }
+
+  .editor__range-toggle {
+    left: 100px;
+  }
+
+  .editor-icon {
+    fill: @pink;
+    border-bottom: 1px solid fade(@black, 10%);
+    padding-right: 260px;
+    margin-left: 260px;
+    padding-bottom: 25px;
+
+    &--contrast {
+      & path {
+        fill: @pink;
+      }
+    }
+  }
+
+  .editor__range-controls {
+    margin-left: -30px;
+  }
+
+  .editor__fill {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @mobile-width) and (max-width: @desktop-width) {
+  .editor-icon {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
@@ -111,5 +236,62 @@
   .editor {
     width: 940px;
     height: 514px;
+    margin: 0 auto;
+
+    &--crop {
+      margin-top: -10px;
+    }
+  }
+
+  .editor__wrapper {
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .editor__range-controls .editor__scale {
+    width: 288px;
+  }
+
+  .editor__wraper-buttons {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  .editor__button {
+    width: 183px;
+    height: 55px;
+  }
+
+  .editor-icon {
+    padding-right: 350px;
+    margin-left: 370px;
+
+    &--crop {
+      padding-bottom: 13px;
+    }
+
+    &--fill {
+      padding-bottom: 14px;
+    }
+
+    &--contrast {
+      padding-bottom: 19px;
+    }
+  }
+
+  .editor__range-controls {
+    margin-left: 0;
+  }
+
+  .editor__fill {
+    padding-top: 0;
+  }
+
+  .editor__range-container {
+    margin-top: 5px;
+    height: 110px;
   }
 }

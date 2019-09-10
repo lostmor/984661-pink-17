@@ -17,9 +17,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  text-align: center;
   padding-top: 35px;
   padding-bottom: 35px;
-  text-align: center;
 }
 
 .personal-achievements__field {
@@ -30,6 +30,7 @@
 @media (min-width: @tablet-width) {
   .personal-achievements {
     background-color: transparent;
+    margin-top: 100px;
   }
 
   .personal-achievements__form {
@@ -40,9 +41,9 @@
     border: 2px solid #e5e5e5;
   }
 
-  // .personal-achievements__legend {
-  //   padding: 0;
-  // }
+  .personal-achievements__legend {
+    padding: 35px 30px;
+  }
 }
 
 .personal-achievements__label {
@@ -51,33 +52,69 @@
   display: block;
 }
 
-.personal-achievements__checkbox {
-  appearance: none;
-  position: absolute;
-}
-
 .personal-achievements__icon {
   position: absolute;
   margin-left: -60px;
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-size: cover;
+}
+
+.personal-achievements__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .personal-achievements__checkbox[type="checkbox"] + .personal-achievements__icon {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnAgMAAADxzbmmAAAADFBMVEXo6Ojm5ubm5ub///86c/hbAAAAAnRSTlMsw03PNZwAAAAhSURBVBjTY5BaBQUTGLJgzCUM6/9DwYtR5oAwkeICEUMA6pxnTaIgqbwAAAAASUVORK5CYII=");
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #e5e5e5;
+  background-color: @secondary-color;
+}
+
+.personal-achievements__checkbox[type="checkbox"] + .personal-achievements__icon:hover {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: 2px solid @black;
+}
+
+.personal-achievements__checkbox[type="checkbox"] + .personal-achievements__icon:active {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: 2px solid @pink;
 }
 
 .personal-achievements__checkbox[type="checkbox"]:checked + .personal-achievements__icon {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnBAMAAAB+jUwGAAAAJ1BMVEXo6Ojm5ubm5ub0I1f3MmL5QW36T3j/epn/h6L/sMH/2OD/8vT///+gHXlrAAAAAnRSTlMsw03PNZwAAACDSURBVCjPY2BUQgeKDAxCGIJKAgxKZ9DBIYUhKrjEB1PwlDMWwSUmazAETzp7YZo5GaQQTfCksRem7RCFqIJQhTDBE9VICmGCh832gBRmofjouHE2UCFIBtnMYrM9J0ESKIJApXCFCNuLTeEKEYInjOEKkdw5OXvoxzs+QaxpHlvuAACTEfNj75j6/wAAAABJRU5ErkJggg==");
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
+  background-position: 7px 5px;
+  border: 2px solid #e5e5e5;
 }
 
 @media (min-width: @tablet-width) {
   .personal-achievements {
     width: 616px;
     height: 549px;
-    margin-bottom: 60px;
+    margin-top: 35px;
     order: 4;
   }
 
@@ -92,18 +129,33 @@
   .personal-achievements-text {
     margin-left: 40px;
   }
-
-  // .personal-achievements__field {
-  //   margin-bottom: 50px;
-  // }
 }
 
 @media (min-width: @desktop-width) {
+  .personal-achievements__field {
+    width: 936px;
+    height: 228px;
+  }
+
   .personal-achievements {
     width: 936px;
     height: 228px;
+  }
+
+  .personal-achievements__form {
+    width: 936px;
+    height: 228px;
+  }
+
+  .personal-achievements__container {
+    display: flex;
     flex-direction: row;
-    // align-items: center;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .personal-achievements__label {
+    width: 250px;
   }
 }

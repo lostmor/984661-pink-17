@@ -1,12 +1,19 @@
 .entry {
   background-color: @secondary-color;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 184px;
   width: 100%;
+
+  &--photo {
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .entry__text {
@@ -19,14 +26,24 @@
   text-align: center;
 }
 
+.entry__text--hidden {
+  font-style: normal;
+}
+
+@media (max-width: @mobile-width) {
+  .entry__text--hidden {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .entry__text {
     font-size: 18px;
     width: 485px;
+  }
 
-    &--photo {
-      width: 440px;
-    }
+  .entry--photo {
+    height: 200px;
   }
 }
 
@@ -34,9 +51,5 @@
   .entry__text {
     font-size: 18px;
     width: 755px;
-
-    &--photo {
-      width: 571px;
-    }
   }
 }

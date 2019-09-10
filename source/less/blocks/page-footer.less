@@ -4,9 +4,7 @@
   font-weight: 400;
   color: @primary-color;
   text-align: center;
-
   background-color: @secondary-color;
-
   width: 100%;
   height: 284px;
   display: flex;
@@ -41,16 +39,19 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    width: 620px;
     height: 127px;
+    margin: 0 auto;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
+    width: 940px;
     height: 197px;
     flex-direction: row;
-
     font-size: 18px;
   }
 

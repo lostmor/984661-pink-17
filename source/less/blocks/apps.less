@@ -1,18 +1,17 @@
 .apps {
   background-color: @background;
-
   color: @secondary-color;
   .font();
   font-size: 14px;
   font-weight: 300;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 271px;
 }
 
@@ -74,8 +73,9 @@
 @media (min-width: @tablet-width) {
   .apps {
     background-color: transparent;
-    margin-top: -270px;
-    margin-left: -200px;
+    margin-top: -380px;
+    margin-left: -155px;
+    padding-bottom: 112px;
   }
 
   .apps__text {
@@ -85,5 +85,16 @@
 
   .apps-wrapper {
     width: 400px;
+  }
+
+  .apps__list {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .apps {
+    margin-top: -430px;
+    margin-left: -300px;
   }
 }

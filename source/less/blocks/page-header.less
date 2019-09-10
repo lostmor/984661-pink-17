@@ -71,6 +71,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header {
+    width: 100%;
+    text-align: center;
+    background-color: fade(@black, 30%);
+    align-items: center;
+  }
+
   .page-header__wrapper {
     height: 110px;
   }
@@ -87,6 +94,18 @@
     &--tablet {
       display: block;
     }
+
+    &:hover {
+      path {
+        fill: @pink;
+      }
+    }
+
+    &:active {
+      path {
+        fill: fade(@secondary-color, 30%);
+      }
+    }
   }
 }
 
@@ -99,8 +118,6 @@
   }
 
   .page-header__logo-image {
-    margin-left: 130px;
-
     &--mobile {
       display: none;
     }
