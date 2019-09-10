@@ -5,6 +5,7 @@
   align-items: center;
   width: 276px;
   text-align: center;
+  margin-top: 30px;
 }
 
 .user-impressions__legend {
@@ -13,8 +14,10 @@
   font-size: 14px;
   margin-left: 20px;
   margin-bottom: 15px;
-  margin-top: 35px;
   text-align: center;
+  padding: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .user-impressions__textarea {
@@ -30,6 +33,14 @@
   height: 197px;
   text-align: left;
   padding: 15px 20px;
+
+  &:active {
+    border: 2px solid @pink;
+  }
+
+  &:hover {
+    border: 2px solid @black;
+  }
 }
 
 @media (max-width: @mobile-width) {
@@ -42,7 +53,9 @@
   .user-impressions {
     text-align: center;
     width: 616px;
+    height: 289px;
     order: 6;
+    margin-top: 75px;
   }
 
   .user-impressions__textarea {
@@ -50,6 +63,12 @@
     height: 189px;
     text-align: left;
     padding: 15px 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+
+  .user-impressions__legend {
+    margin: 0;
   }
 }
 

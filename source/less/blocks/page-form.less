@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+.page-form__note--pink {
+  color: @pink;
+  font-style: normal;
+}
+
 .page-form__button {
   display: inline-flex;
   box-sizing: border-box;
@@ -20,8 +25,11 @@
   background-color: @green;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   color: @secondary-color;
+
+  .page-form__button-wrapper {
+    margin-top: 50px;
+  }
 
   &:hover {
     background-color: #1c9b5e;
@@ -53,25 +61,35 @@
 @media (min-width: @tablet-width) {
   .page-form__button {
     width: 296px;
-    margin-top: 70px;
-    order: 7;
   }
 
-  .page-form__note {
-    order: 8;
+  .page-form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 630px;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    order: 7;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-form__button {
     width: 296px;
-    // margin-top: 67px;
+  }
+
+  .page-form__button-wrapper {
+    width: 950px;
+    .reset();
   }
 
   .page-form {
+    width: 100%;
+    margin: 0 auto;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 960px;
-    justify-content: flex-start;
   }
 }

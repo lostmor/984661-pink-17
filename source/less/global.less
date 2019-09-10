@@ -9,6 +9,20 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 input::-webkit-input-placeholder {
@@ -42,4 +56,15 @@ input[type="radio"]:not(:checked) + label {
   padding-left: 28px;
   line-height: 20px;
   cursor: pointer;
+}
+
+td {
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  td {
+    border-right: 2px solid #e5e5e5;
+  }
 }

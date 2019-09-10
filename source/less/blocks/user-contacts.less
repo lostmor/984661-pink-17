@@ -24,6 +24,14 @@
   box-sizing: border-box;
   margin-bottom: 20px;
   padding-left: 18px;
+
+  &:hover {
+    border-color: @primary-color;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
 }
 
 .user-contacts__legend {
@@ -32,6 +40,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  padding: 30px;
 }
 
 .user-contacts__input {
@@ -44,8 +53,8 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  width: 57px;
-  height: 57px;
+  width: 55px;
+  height: 55px;
   border: 1px solid #e5e5e5;
   background-color: #e5e5e5;
 }
@@ -80,6 +89,12 @@
     height: 306px;
     text-align: center;
     order: 3;
+    margin-top: 35px;
+  }
+
+  .user-contacts__legend {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .user-contacts__label {
@@ -100,8 +115,40 @@
 
 @media (min-width: @desktop-width) {
   .user-contacts {
-    width: 936px;
+    width: 940px;
     height: 158px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .user-contacts__field {
+    width: 940px;
+    height: 158px;
+  }
+
+  .user-contacts__form-container {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .user-contacts__label-mail {
+    margin-top: 25px;
+  }
+
+  .user-contacts__legend {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .user-contacts__input-wrapper {
+    width: 371px;
+    height: 60px;
+  }
+
+  .user-contacts__input-icon-wrapper {
+    width: 58px;
+    height: 58px;
   }
 }
